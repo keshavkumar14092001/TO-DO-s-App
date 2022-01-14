@@ -104,12 +104,49 @@ form button:hover {
     pointer-events: none;
 }
 
-.completed{
+.completed {
     text-decoration: line-through;
     opacity: 0.50;
 }
 
-.fall{
+.fall {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0.50;
+}
+
+/* Making it Responsive */
+
+@media(max-width: 440px) {
+
+    .top-container {
+        height: 200px;
+    }
+
+    form input, form button {
+        font-size: 1.5rem;
+    }
+
+    .todo {
+        font-size: 1rem;
+        height: 35px;
+    }
+
+    .check, .delete {
+        padding: 10px 20px 13px 20px;
+        height: 35px;
+    }
+
+    .todo-list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    form input, form button {
+        font-size: 1.1rem;
+    }
 }
